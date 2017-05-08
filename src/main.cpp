@@ -1,3 +1,5 @@
+//http://stackoverflow.com/questions/4813975/why-is-visual-studio-2010-not-able-to-find-open-pdb-files for debugging
+//https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/#configure-cmake for launch.vs.json file where you can specify I/O arguments
 
 #include <fstream>
 #include <iostream>
@@ -82,7 +84,6 @@ int main(int argc, char* argv[]) {
 
     // reads first element from the current line
     iss >> sensor_type;
-
     if (sensor_type.compare("L") == 0) {
       // laser measurement
 
